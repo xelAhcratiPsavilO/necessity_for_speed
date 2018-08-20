@@ -37,6 +37,11 @@ I want to park my car at the garage
 |Driver||
 |Car||
 |Garage|park_car|
+```
+As a member of the crew
+So I can decide whether to use a garage
+I want to see a car that has been parked
+```
 
 ## Diagram of Correlation
 

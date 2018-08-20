@@ -30,7 +30,7 @@ I'd like to see if a car is working.
 
 ## Diagram of Correlation
 
-Garage <== release_car ==> Car
+Garage <== release_car ==> Car </br>
 Car <== working? ==> true/false
 
 ## Note

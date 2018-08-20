@@ -27,6 +27,16 @@ I'd like to see if a car is working.
 |Driver||
 |Car|working?|
 |Garage||
+```
+As a member of the crew
+So I can return cars I've driven
+I want to park my car at the garage
+```
+| Objects | Messages |
+|--|--|
+|Driver||
+|Car||
+|Garage|park_car|
 
 ## Diagram of Correlation
 

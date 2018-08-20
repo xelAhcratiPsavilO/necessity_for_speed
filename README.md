@@ -30,7 +30,8 @@ I'd like to see if a car is working.
 
 ## Diagram of Correlation
 
-Garage <== release_car ==> Car 
+Garage <== release_car ==> Car
+Car <== working? ==> true/false
 
 ## Note
 This project is inspired in the Boris Bikes project that you can find [here](https://github.com/makersacademy/course/blob/master/boris_bikes/0_challenge_map.md).

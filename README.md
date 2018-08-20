@@ -42,11 +42,17 @@ As a member of the crew
 So I can decide whether to use a garage
 I want to see a car that has been parked
 ```
+| Objects | Messages |
+|--|--|
+|Driver||
+|Car||
+|Garage|car|
 
 ## Diagram of Correlation
 
 Garage <== release_car ==> Car </br>
-Car <== working? ==> true/false
+Car <== working? ==> true/false </br>
+Garage <== park_car ==> Car </br>
 
 ## Note
 This project is inspired in the Boris Bikes project that you can find [here](https://github.com/makersacademy/course/blob/master/boris_bikes/0_challenge_map.md).

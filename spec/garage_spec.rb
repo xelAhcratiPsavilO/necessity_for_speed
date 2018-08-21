@@ -8,5 +8,10 @@ describe Garage do
   end
 
   it { is_expected.to respond_to(:park_car).with(1).argument }
-  
+
+  it 'parks a car' do
+    car = subject.release_car
+    expect(subject.park_car(car)).to eq car
+  end
+
 end

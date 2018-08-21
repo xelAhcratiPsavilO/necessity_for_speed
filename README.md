@@ -67,6 +67,16 @@ I'd like garages not to accept more cars than their capacity.
 |Driver||
 |Car||
 |Garage|park_car(raise_error)|
+```
+As a crew leader,
+So that I can plan the distribution of cars,
+I want a garage to have a default capacity of 20 cars.
+```
+| Objects | Messages |
+|--|--|
+|Driver||
+|Car||
+|Garage|park_car(raise_error)|
 
 ## Diagram of Correlation
 

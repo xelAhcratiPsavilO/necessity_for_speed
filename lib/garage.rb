@@ -6,7 +6,7 @@ class Garage
     @cars = []
   end
 
-  attr_reader :car
+  attr_reader :cars
 
   def park_car(car)
     fail 'No more cars allowed' if @cars.count >=20

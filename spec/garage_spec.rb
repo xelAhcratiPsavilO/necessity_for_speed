@@ -20,14 +20,14 @@ describe Garage do
       expect { subject.park_car(car) }.to raise_error 'No more cars allowed'
     end
     it 'parks a car' do
-      expect(subject.park_car(car)).to eq car
+      expect(subject.park_car(car)).to eq [car]
     end
   end
 
   describe '#car' do
     it 'shows parked cars' do
       subject.park_car(car)
-      expect(subject.car).to eq car
+      expect(subject.cars).to eq [car]
     end
   end
 

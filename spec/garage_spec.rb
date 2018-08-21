@@ -15,6 +15,11 @@ describe Garage do
   end
 
   describe '#park_car' do
+    it 'raises an error if the garage has full capacity' do
+      car2 = Car.new
+      subject.park(car)
+      expect(subject.park_car(car2)).to raise_error 'No more cars allowed'
+    end
     it 'parks a car' do
       expect(subject.park_car(car)).to eq car
     end

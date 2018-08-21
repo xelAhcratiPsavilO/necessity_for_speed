@@ -5,6 +5,7 @@ class Garage
   attr_reader :car
 
   def release_car
+    fail 'No cars available' unless @car
     Car.new
   end
 

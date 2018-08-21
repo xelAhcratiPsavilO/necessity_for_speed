@@ -57,6 +57,16 @@ I'd like garages not to release cars when there are none inside.
 |Driver||
 |Car||
 |Garage|release_car(raise_error)|
+```
+As a crew leader,
+So that I can control the distribution of cars,
+I'd like garages not to accept more cars than their capacity.
+```
+| Objects | Messages |
+|--|--|
+|Driver||
+|Car||
+|Garage|park_car(raise_error)|
 
 ## Diagram of Correlation
 

@@ -56,14 +56,15 @@ I'd like garages not to release cars when there are none inside.
 |--|--|
 |Driver||
 |Car||
-|Garage|release_car|
+|Garage|release_car(raise_error)|
 
 ## Diagram of Correlation
 
 Garage <== release_car ==> Car </br>
 Car <== working? ==> true/false </br>
-Garage <== park_car ==> Car </br
-Garage <== car ==> Car
+Garage <== park_car ==> Car </br>
+Garage <== car ==> Car </br>
+Garage <== release_car(raise_error) ==> Car </br>
 
 ## Note
 This project is inspired in the Boris Bikes project that you can find [here](https://github.com/makersacademy/course/blob/master/boris_bikes/0_challenge_map.md).

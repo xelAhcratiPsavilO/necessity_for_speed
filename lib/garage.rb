@@ -10,4 +10,8 @@ class Garage
     @car = car
   end
 
+  def car
+    @car
+  end
+
 end

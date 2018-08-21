@@ -6,4 +6,8 @@ class Garage
     Car.new
   end
 
+  def park_car(car)
+
+  end
+
 end

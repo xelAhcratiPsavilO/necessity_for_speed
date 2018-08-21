@@ -12,4 +12,10 @@ describe Garage do
     expect(subject.park_car(car)).to eq car
   end
 
+  it 'shows parked cars' do
+    car = subject.release_car
+    subject.park_car(car)
+    expect(subject.car).to eq car
+  end
+
 end

@@ -7,7 +7,7 @@ class Garage
   end
 
   def park_car(car)
-
+    @car = car
   end
 
 end

@@ -97,6 +97,16 @@ I'd like to report a car as broken when I return it.
 |Driver||
 |Car|report_broken|
 |Garage||
+```
+As a crew leader,
+So that I can manage broken cars,
+I'd like garages not to release broken cars.
+```
+| Objects | Messages |
+|--|--|
+|Driver||
+|Car||
+|Garage|release_car(raise_error)|
 
 ## Diagram of Correlation
 

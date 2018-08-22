@@ -8,6 +8,9 @@ describe Garage do
     it 'raises an error if there are no cars in the garage' do
       expect { subject.release_car }.to raise_error 'No cars available'
     end
+    it 'raises an error if there the car is broken' do
+      expect { subject.release_car }.to raise_error 'The car is broken'
+    end
     it 'releases a car' do
       subject.park_car(car)
       expect(subject.release_car).to be_a Car

@@ -110,16 +110,16 @@ I'd like garages not to release broken cars.
 
 ## Diagram of Correlation
 
+Garage <== cars ==> array </br>
+Garage <== cpapacity  ==> integer </br>
+Garage <== park_car ==> array </br>
 Garage <== release_car ==> Car </br>
-Car <== working? ==> true/false </br>
-Garage <== park_car ==> Car </br>
-Garage <== car ==> Car </br>
-Garage <== release_car(raise_error) ==> error </br>
-Garage <== park_car(raise_error) ==> error </br>
-Garage <== park_car(raise_error) ==> error </br>
-Garage(capacity) <== capacity ==> integer </br>
-Car <== report_broken ==> variable working is false </br>
-Garage <== release_car(raise_error) ==> error </br>
+Garage <== full? ==> boolean </br>
+Garage <== empty? ==> boolean </br>
+Garage <== broken? ==> boolean </br>
+
+Car <== report_broken ==> true </br>
+Car <== broken? ==> boolean </br>
 
 ## Note
 This project is inspired in the Boris Bikes project that you can find [here](https://github.com/makersacademy/course/blob/master/boris_bikes/0_challenge_map.md).

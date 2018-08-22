@@ -119,6 +119,7 @@ Garage <== park_car(raise_error) ==> error </br>
 Garage <== park_car(raise_error) ==> error </br>
 Garage(capacity) <== capacity ==> integer </br>
 Car <== report_broken ==> variable working is false </br>
+Garage <== release_car(raise_error) ==> error </br>
 
 ## Note
 This project is inspired in the Boris Bikes project that you can find [here](https://github.com/makersacademy/course/blob/master/boris_bikes/0_challenge_map.md).

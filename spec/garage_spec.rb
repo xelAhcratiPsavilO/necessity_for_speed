@@ -8,7 +8,7 @@ describe Garage do
     end
     it 'raises an error if there the car is broken' do
       car = double(:car)
-      car.report_broken
+      allow(car).to receive(:broken?).and_return(true)
       subject.park_car(car)
       expect { subject.release_car }.to raise_error 'The car is broken'
     end

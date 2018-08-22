@@ -10,7 +10,7 @@ describe Garage do
     end
     it 'releases a car' do
       subject.park_car(car)
-      expect(subject.release_car).to be_working
+      expect(subject.release_car).to be_a Car
     end
   end
 

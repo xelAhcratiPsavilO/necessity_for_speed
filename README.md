@@ -1,5 +1,5 @@
-# NEED FOR SPEED
-Need for Speed is an individual project built in one day which has per objective to demonstrate knowledge on the following areas:
+<h2 align="center">NECESSITY FOR SPEED</h2>
+Necessity for Speed is an individual project which has per objective to demonstrate knowledge on the following areas:
 
 * Ability to write code that is easy to change.
 * Ability to test-drive my code.

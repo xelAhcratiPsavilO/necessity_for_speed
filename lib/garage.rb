@@ -4,11 +4,13 @@ class Garage
 
   DEFAULT_CAPACITY = 20
 
+    attr_reader :cars
+    attr_reader :capacity
+
   def initialize
     @cars = []
+    @capacity = DEFAULT_CAPACITY
   end
-
-  attr_reader :cars
 
   def park_car(car)
     fail 'No more cars allowed' if full?

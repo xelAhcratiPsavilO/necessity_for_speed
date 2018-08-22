@@ -87,6 +87,16 @@ I want to be able to specify a larger capacity when necessary.
 |Driver||
 |Car||
 |Garage(capacity)||
+```
+As a driver,
+So that I reduce the chance of getting a broken car,
+I'd like to report a car as broken when I return it.
+```
+| Objects | Messages |
+|--|--|
+|Driver||
+|Car|report_broken|
+|Garage||
 
 ## Diagram of Correlation
 

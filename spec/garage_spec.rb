@@ -14,8 +14,9 @@ describe Garage do
     end
     it 'releases a car' do
       car = double(:car)
+      allow(car).to receive(:broken?).and_return(false)
       subject.park_car(car)
-      expect(subject.release_car).not_to be_nill
+      expect(subject.release_car).to be car
     end
   end
 

@@ -104,10 +104,11 @@ Garage <== release_car ==> Car </br>
 Car <== working? ==> true/false </br>
 Garage <== park_car ==> Car </br>
 Garage <== car ==> Car </br>
-Garage <== release_car(raise_error) ==> Car </br>
-Garage <== park_car(raise_error) ==> Car </br>
-Garage <== park_car(raise_error) ==> Car </br>
-Garage(capacity) <== capacity ==> Car </br>
+Garage <== release_car(raise_error) ==> error </br>
+Garage <== park_car(raise_error) ==> error </br>
+Garage <== park_car(raise_error) ==> error </br>
+Garage(capacity) <== capacity ==> integer </br>
+Car <== report_broken ==> variable working is flase </br>
 
 ## Note
 This project is inspired in the Boris Bikes project that you can find [here](https://github.com/makersacademy/course/blob/master/boris_bikes/0_challenge_map.md).

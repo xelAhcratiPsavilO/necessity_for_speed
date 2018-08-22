@@ -16,7 +16,9 @@ describe Garage do
 
   describe '#park_car' do
     it 'raises an error if the garage has full capacity' do
-      20.times { subject.park_car(Car.new) }
+      Garage::DEFAULT_CAPACITY.times do
+        subject.park_car(Car.new)
+      end
       expect { subject.park_car(car) }.to raise_error 'No more cars allowed'
     end
     it 'parks a car' do

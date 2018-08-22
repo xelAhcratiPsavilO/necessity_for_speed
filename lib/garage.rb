@@ -2,6 +2,8 @@ require_relative 'car'
 
 class Garage
 
+  DEFAULT_CAPACITY = 20
+
   def initialize
     @cars = []
   end
@@ -21,7 +23,7 @@ class Garage
   private
 
   def full?
-    @cars.count >= 20
+    @cars.count >= DEFAULT_CAPACITY
   end
 
   def empty?

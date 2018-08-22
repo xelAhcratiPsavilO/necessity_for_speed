@@ -9,10 +9,12 @@ describe Garage do
       expect { subject.release_car }.to raise_error 'No cars available'
     end
     it 'raises an error if there the car is broken' do
+      car.report_broken
+      subject.park_car(car)
       expect { subject.release_car }.to raise_error 'The car is broken'
     end
     it 'releases a car' do
-      subject.park_car(car)
+      subject.park_car(Car.new)
       expect(subject.release_car).to be_a Car
     end
   end

@@ -19,6 +19,7 @@ class Garage
 
   def release_car
     fail 'No cars available' if empty?
+    fail 'The car is broken' if cars.last.broken?
     cars.pop
   end
 

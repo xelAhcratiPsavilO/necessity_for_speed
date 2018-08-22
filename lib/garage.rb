@@ -14,22 +14,22 @@ class Garage
 
   def park_car(car)
     fail 'No more cars allowed' if full?
-    @cars << car
+    cars << car
   end
 
   def release_car
-    fail 'No cars available' if @cars.empty?
-    @cars.pop
+    fail 'No cars available' if empty?
+    cars.pop
   end
 
   private
 
   def full?
-    @cars.count >= DEFAULT_CAPACITY
+    cars.count >= capacity
   end
 
   def empty?
-    @cars.empty?
+    cars.empty?
   end
 
 end
